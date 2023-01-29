@@ -1,0 +1,9 @@
+/.idea
+/.vscode
+/.air.conf
+runtime
+/tmp
+
+/go.sum
+
+/workspace.code-workspace
