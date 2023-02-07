@@ -1,3 +1,3 @@
-module gitee.com/php-gopher/php2go
+module github.com/lihao1988/php2go
 
 go 1.17
