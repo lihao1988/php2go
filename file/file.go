@@ -113,6 +113,7 @@ func Chmod(filename string, mode os.FileMode) bool {
 }
 
 // Chown chown_file
+// php chown
 func Chown(filename string, uid, gid int) bool {
 	return os.Chown(filename, uid, gid) == nil
 }
