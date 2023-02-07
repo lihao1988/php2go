@@ -12,6 +12,10 @@ PHP 转行到 Golang 过程中，实现部分 PHP 代码中使用频率较高的
 ```shell
 go get github.com/lihao1988/php2go
 ```
+或
+```shell
+go get gitee.com/lihao1988/php2go
+```
 
 ## 版本要求
 Go 1.15 or above.
