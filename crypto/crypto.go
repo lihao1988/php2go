@@ -6,7 +6,6 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"net/url"
 )
 
 // MD5 encode string to md5 string
@@ -26,7 +25,6 @@ func Sha1(str string) string {
 	return hex.EncodeToString(hash.Sum(nil))
 }
 
-
 // Base64Encode encode string to base64 string
 // php base64_encode
 func Base64Encode(str string) string {
@@ -42,16 +40,4 @@ func Base64Decode(str string) (string, error) {
 	}
 
 	return hex.EncodeToString(data), nil
-}
-
-// UrlEncode url-encode string
-// php urlencode
-func UrlEncode(str string) string {
-	return url.QueryEscape(str)
-}
-
-// UrlDecode url-decode string
-// php urldecode
-func UrlDecode(str string) (string, error) {
-	return url.QueryUnescape(str)
 }
