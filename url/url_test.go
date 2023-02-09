@@ -23,7 +23,8 @@ func TestUrl(t *testing.T) {
 	uRStr, err := RawUrlDecode(urlREnStr)
 	fmt.Println("RawUrlDecode: ", uRStr, ", Error: ", err)
 
-	queryData := map[string][]string{}
-	_ = json.Unmarshal(urlDataByte, &queryData)
-	fmt.Println(HttpBuildQuery(queryData))
+	queryData := map[string]string{
+		"a": "a1", "b": "b1",
+	}
+	fmt.Println("HttpBuildQuery: ", HttpBuildQuery(queryData))
 }

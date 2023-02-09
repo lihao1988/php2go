@@ -37,6 +37,14 @@ func RawUrlDecode(str string) (string, error) {
 
 // HttpBuildQuery http build query
 // php http_build_query
-func HttpBuildQuery(queryData netUrl.Values) string {
-	return queryData.Encode()
+func HttpBuildQuery(queryData map[string]string) string {
+	var uri netUrl.URL
+	q := uri.Query()
+	for key, value := range queryData {
+		if strings.TrimSpace(value) != "" {
+			q.Add(key, value)
+		}
+	}
+
+	return q.Encode()
 }
