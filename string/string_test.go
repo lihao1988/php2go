@@ -20,5 +20,7 @@ func TestString(t *testing.T) {
 	fmt.Println("StrPos: ", StrPos(str, "-", 2))
 	fmt.Println("StrRPos: ", StrRPos(str, "-", 9))
 
+	fmt.Println("StrSplit: ", StrSplit(str, "-"))
+
 	fmt.Println("UCFirst: ", UCFirst("abcdefg"))
 }

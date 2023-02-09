@@ -24,7 +24,7 @@ func TestUrl(t *testing.T) {
 	fmt.Println("RawUrlDecode: ", uRStr, ", Error: ", err)
 
 	queryData := map[string]string{
-		"a": "a1", "b": "b1",
+		"a": "中国", "b": "b1",
 	}
 	fmt.Println("HttpBuildQuery: ", HttpBuildQuery(queryData))
 }

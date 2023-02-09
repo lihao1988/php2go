@@ -42,8 +42,17 @@ MD5()                  [PHP:md5(),计算字符串的 MD5 散列]
 Sha1()                 [PHP:sha1(),计算字符串的 SHA-1 散列]
 Base64Encode()         [PHP:base64_encode(),使用 base64 对数据进行编码]
 Base64Decode()         [PHP:base64_decode(),对使用 base64 编码的数据进行解码]
-UrlEncode()            [PHP:urlencode(),编码 URL 字符串]
-UrlDecode()            [PHP:urldecode(),解码已编码的 URL 字符串]
+```
+### Date/Time Functions
+```php
+## import datetime
+
+Time()                 [PHP:time(),返回当前时间的 Unix 时间戳]
+StrToTime()            [PHP:strtotime(),将任何英文文本的日期或时间描述解析为 Unix 时间戳]
+Date()                 [PHP:date(),格式化本地日期和时间]
+CheckDate()            [PHP:checkdate(),验证日期格式的合法性]
+Sleep()                [PHP:sleep(),延迟代码执行若干秒]
+Usleep()               [PHP:usleep(),延迟代码执行若干微秒]
 ```
 ### Filesystem Functions
 ```php
@@ -60,6 +69,41 @@ FileGetContents()      [PHP:file_get_contents(),把文件读入字符串]
 FilePutContents()      [PHP:file_put_contents(),把字符串写入文件]
 Chmod()                [PHP:chmod(),改变文件模式]
 Chown()                [PHP:chown(),改变文件所有者]
+```
+### Math Functions
+```php
+## import math
+Abs()                  [PHP:abs(),绝对值]
+Round()                [PHP:round(),对浮点数进行四舍五入]
+Floor()                [PHP:floor(),向下舍入为最接近的整数]
+Ceil()                 [PHP:ceil(),向上舍入为最接近的整数]
+Max()                  [PHP:max(),返回最大值]
+Min()                  [PHP:min(),返回最小值]
+DecBin()               [PHP:decbin(),把十进制转换为二进制]
+DecHex()               [PHP:dechex(),把十进制转换为十六进制]
+```
+### String Functions
+```php
+## import string
+StrLen()               [PHP:strlen(),获取字符串长度]
+MbStrLen()             [PHP:mb_strlen(),按照 UTF-8 获取字符串的长度]
+SubstrCount()          [PHP:substr_count(),计算字串出现的次数]
+Substr()               [PHP:substr(),返回字符串的子串]
+MbSubstr()             [PHP:mb_substr(),获取部分字符串]
+StrPos()               [PHP:strpos(),查找字符串首次出现的位置]
+StrRPos()              [PHP:strrpos(),计算指定字符串在目标字符串中最后一次出现的位置]
+StrSplit()             [PHP:str_split(),将字符串转换为数组]
+UCFirst()              [PHP:ucfirst(),将字符串的首字母转换为大写]
+```
+### URL Functions
+```php
+## import url
+ParseUrl()             [PHP:parse_url(),解析 URL，返回其组成部分]
+UrlEncode()            [PHP:urlencode(),编码 URL 字符串]
+UrlDecode()            [PHP:urldecode(),解码已编码的 URL 字符串]
+RawUrlEncode()         [PHP:rawurlencode(),按照 RFC 3986 对 URL 进行编码]
+RawUrlDecode()         [PHP:rawurldecode(),对已编码的 URL 字符串进行解码]
+HttpBuildQuery()       [PHP:http_build_query(),生成 URL-encode 之后的请求字符串]
 ```
 
 ## LICENSE
