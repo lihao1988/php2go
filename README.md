@@ -8,12 +8,16 @@
 #### 介绍
 PHP 转行到 Golang 过程中，实现部分 PHP 代码中使用频率较高的函数，让 PHPer 蜕变为 Gopher 更简单、更快捷！
 
+#### README
+[README](https://github.com/lihao1988/php2go/blob/main/README.md)  
+[README-en](https://github.com/lihao1988/php2go/blob/main/README.en.md)
+
 #### 安装
 ```shell
+// github
 go get github.com/lihao1988/php2go
-```
-或
-```shell
+
+// gitee
 go get gitee.com/lihao1988/php2go
 ```
 
@@ -73,6 +77,7 @@ Chown()                [PHP:chown(),改变文件所有者]
 ### Math Functions
 ```php
 ## import math
+
 Abs()                  [PHP:abs(),绝对值]
 Round()                [PHP:round(),对浮点数进行四舍五入]
 Floor()                [PHP:floor(),向下舍入为最接近的整数]
@@ -85,6 +90,7 @@ DecHex()               [PHP:dechex(),把十进制转换为十六进制]
 ### String Functions
 ```php
 ## import string
+
 StrLen()               [PHP:strlen(),获取字符串长度]
 MbStrLen()             [PHP:mb_strlen(),按照 UTF-8 获取字符串的长度]
 SubstrCount()          [PHP:substr_count(),计算字串出现的次数]
@@ -98,6 +104,7 @@ UCFirst()              [PHP:ucfirst(),将字符串的首字母转换为大写]
 ### URL Functions
 ```php
 ## import url
+
 ParseUrl()             [PHP:parse_url(),解析 URL，返回其组成部分]
 UrlEncode()            [PHP:urlencode(),编码 URL 字符串]
 UrlDecode()            [PHP:urldecode(),解码已编码的 URL 字符串]
